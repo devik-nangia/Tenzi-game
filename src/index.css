@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    background-color: #122C34;
+    margin-top: 7%;
+}
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+main{
+    /* border: 2px solid black; */
+    min-width: 10rem;
+    padding: 2rem;
+    margin: 1.2rem;
+    background-color: rgb(243, 240, 240);
+    border-radius: 2rem;
+    max-width: 40rem;
+    -webkit-box-shadow: 0px 0px 100px 0px #23393f;
+    box-shadow: 0px 0px 100px 0px #23393f;
+}
+#game-heading{
+    text-align: center;
+    font-weight: 500;
+    color: #182c69;
+}
+#game-rules{
+    color: #2A4494;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+#stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    text-align: center;
+    font-weight: 500;
+    color: #182c69;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+#dice-container{
+    display: flex;
+    /* border: 2px solid black; */
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.dice-button{
+    padding: 1.3rem;
+    color: black;
+    font-weight: 600;
+    width: 20%;
+    min-width: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0.8rem;
+    /* border: 4px solid #000000; */
+    box-shadow: 2px 2px 3px 1.5px rgba(142, 141, 146, 0.61);
+    max-width: 5rem;
+}
+
+button:disabled {
+    /* opacity: 0.5; */
+    /* cursor: not-allowed;  */
+    background: rgb(206, 243, 152);
+}
+
+#roll-button-container{
+    text-align: center;
+    margin-top: 3rem;
+}
+.button-roll-reset{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    background-color: #224870;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.1s;
+}
+
+.button-roll-reset:hover{
+    box-shadow: 3px 3px 10px 0px rgba(18,44,52,1);
+    background-color: #1e3f61;
+}
